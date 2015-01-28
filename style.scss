@@ -1,0 +1,39 @@
+body{
+  margin:0;
+  padding-top:2em;
+}
+#mainWrapper{
+  width:70%;
+  margin:auto;
+
+}
+aside{
+  float:left;
+  width:25%;
+  box-sizing:border-box;
+  padding-right:1em;
+  min-height:500px;
+  img{
+    width:100%;
+  }
+  span{
+    display:block;
+  }
+  #statsWrapper{
+    div{
+      float:left;
+      text-align:center;
+      width:33.33%;
+    }
+  }
+}
+section{
+  float:left;
+  width:75%;
+  min-height:500px;
+  li{
+    width:100%;
+    color:#4183c4;
+    list-style-type:none;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "underline",
+  "version": "0.0.1",
+  "main": ["lib/array-extensions.js", "lib/map-extensions.js", "lib/map-visitor.js"],
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "underscore": "latest"
+  },
+  "devDependencies": {
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "underline",
+  "main": [
+    "lib/array-extensions.js",
+    "lib/map-extensions.js",
+    "lib/map-visitor.js"
+  ],
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "underscore": "latest"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/asengupta/underline",
+  "_release": "6d42c61569",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "6d42c615691752d402c93b5989a52ca343cd72cc"
+  },
+  "_source": "git://github.com/asengupta/underline.git",
+  "_target": "*",
+  "_originalSource": "underline",
+  "_direct": true
+}

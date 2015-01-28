@@ -1,0 +1,960 @@
+var activity=[
+  {
+    "id": "2540911554",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29901192,
+      "name": "sitzadad/ObjectLiteral",
+      "url": "https://api.github.com/repos/sitzadad/ObjectLiteral"
+    },
+    "payload": {
+      "push_id": 558023087,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "e746170b067774c55fd7464055faedf209f6a351",
+      "before": "5745e198a8e2ae3b50017af1eb9d7c4e3a1a5741",
+      "commits": [
+        {
+          "sha": "e746170b067774c55fd7464055faedf209f6a351",
+          "author": {
+            "email": "sitzadad@Adams-MBP.attlocal.net",
+            "name": "Adam Sitz"
+          },
+          "message": "working except on 2nd edit of the same product",
+          "distinct": true,
+          "url": "https://api.github.com/repos/sitzadad/ObjectLiteral/commits/e746170b067774c55fd7464055faedf209f6a351"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-28T01:43:08Z"
+  },
+  {
+    "id": "2539246749",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29901192,
+      "name": "sitzadad/ObjectLiteral",
+      "url": "https://api.github.com/repos/sitzadad/ObjectLiteral"
+    },
+    "payload": {
+      "push_id": 557355329,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "5745e198a8e2ae3b50017af1eb9d7c4e3a1a5741",
+      "before": "7b99a9c933ded9f843b8129d6f1137c7dc886425",
+      "commits": [
+        {
+          "sha": "5745e198a8e2ae3b50017af1eb9d7c4e3a1a5741",
+          "author": {
+            "email": "sitzadad@Adams-MacBook-Pro.local",
+            "name": "Adam Sitz"
+          },
+          "message": "template working",
+          "distinct": true,
+          "url": "https://api.github.com/repos/sitzadad/ObjectLiteral/commits/5745e198a8e2ae3b50017af1eb9d7c4e3a1a5741"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-27T14:08:11Z"
+  },
+  {
+    "id": "2538437568",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29901192,
+      "name": "sitzadad/ObjectLiteral",
+      "url": "https://api.github.com/repos/sitzadad/ObjectLiteral"
+    },
+    "payload": {
+      "ref": "master",
+      "ref_type": "branch",
+      "master_branch": "master",
+      "description": "",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2015-01-27T06:42:29Z"
+  },
+  {
+    "id": "2538436409",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29901192,
+      "name": "sitzadad/ObjectLiteral",
+      "url": "https://api.github.com/repos/sitzadad/ObjectLiteral"
+    },
+    "payload": {
+      "ref": null,
+      "ref_type": "repository",
+      "master_branch": "master",
+      "description": "",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2015-01-27T06:41:26Z"
+  },
+  {
+    "id": "2535700297",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29847365,
+      "name": "sitzadad/JSEvents",
+      "url": "https://api.github.com/repos/sitzadad/JSEvents"
+    },
+    "payload": {
+      "ref": "master",
+      "ref_type": "branch",
+      "master_branch": "master",
+      "description": "",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2015-01-26T06:06:10Z"
+  },
+  {
+    "id": "2535698720",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29847365,
+      "name": "sitzadad/JSEvents",
+      "url": "https://api.github.com/repos/sitzadad/JSEvents"
+    },
+    "payload": {
+      "ref": null,
+      "ref_type": "repository",
+      "master_branch": "master",
+      "description": "",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2015-01-26T06:04:20Z"
+  },
+  {
+    "id": "2533179961",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29665859,
+      "name": "sitzadad/PhotoAlbum",
+      "url": "https://api.github.com/repos/sitzadad/PhotoAlbum"
+    },
+    "payload": {
+      "push_id": 554791774,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "1640047fa7e8cca0beddca77f4f6424805c1c4d7",
+      "before": "cde1e9af10401b7df2fc4eee23fc9f1ad13b2cb9",
+      "commits": [
+        {
+          "sha": "1640047fa7e8cca0beddca77f4f6424805c1c4d7",
+          "author": {
+            "email": "sitzadad@Adams-MacBook-Pro.local",
+            "name": "Adam Sitz"
+          },
+          "message": "Much improved. Works perfectly.",
+          "distinct": true,
+          "url": "https://api.github.com/repos/sitzadad/PhotoAlbum/commits/1640047fa7e8cca0beddca77f4f6424805c1c4d7"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-23T21:18:51Z"
+  },
+  {
+    "id": "2531482198",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29665859,
+      "name": "sitzadad/PhotoAlbum",
+      "url": "https://api.github.com/repos/sitzadad/PhotoAlbum"
+    },
+    "payload": {
+      "push_id": 554095116,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "cde1e9af10401b7df2fc4eee23fc9f1ad13b2cb9",
+      "before": "f4591d0b492d50bff6fc6acc46dcb1b295967dd0",
+      "commits": [
+        {
+          "sha": "cde1e9af10401b7df2fc4eee23fc9f1ad13b2cb9",
+          "author": {
+            "email": "sitzadad@Adams-MBP.attlocal.net",
+            "name": "Adam Sitz"
+          },
+          "message": "caught an error with transitions/hover",
+          "distinct": true,
+          "url": "https://api.github.com/repos/sitzadad/PhotoAlbum/commits/cde1e9af10401b7df2fc4eee23fc9f1ad13b2cb9"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-23T07:30:32Z"
+  },
+  {
+    "id": "2531458974",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29665859,
+      "name": "sitzadad/PhotoAlbum",
+      "url": "https://api.github.com/repos/sitzadad/PhotoAlbum"
+    },
+    "payload": {
+      "push_id": 554085171,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "f4591d0b492d50bff6fc6acc46dcb1b295967dd0",
+      "before": "d70b0556280f00ff796b054a09f2591053743c92",
+      "commits": [
+        {
+          "sha": "f4591d0b492d50bff6fc6acc46dcb1b295967dd0",
+          "author": {
+            "email": "sitzadad@Adams-MBP.attlocal.net",
+            "name": "Adam Sitz"
+          },
+          "message": "New code is much more concise. Need to address bug with back button and add img object.",
+          "distinct": true,
+          "url": "https://api.github.com/repos/sitzadad/PhotoAlbum/commits/f4591d0b492d50bff6fc6acc46dcb1b295967dd0"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-23T07:09:57Z"
+  },
+  {
+    "id": "2531285289",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29665859,
+      "name": "sitzadad/PhotoAlbum",
+      "url": "https://api.github.com/repos/sitzadad/PhotoAlbum"
+    },
+    "payload": {
+      "push_id": 554011250,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "d70b0556280f00ff796b054a09f2591053743c92",
+      "before": "623290e25ce96eea7785d8f64ec2dfa4e73c2653",
+      "commits": [
+        {
+          "sha": "d70b0556280f00ff796b054a09f2591053743c92",
+          "author": {
+            "email": "sitzadad@Adams-MBP.attlocal.net",
+            "name": "Adam Sitz"
+          },
+          "message": "started over to make it dry",
+          "distinct": true,
+          "url": "https://api.github.com/repos/sitzadad/PhotoAlbum/commits/d70b0556280f00ff796b054a09f2591053743c92"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-23T04:19:29Z"
+  },
+  {
+    "id": "2528713196",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29665859,
+      "name": "sitzadad/PhotoAlbum",
+      "url": "https://api.github.com/repos/sitzadad/PhotoAlbum"
+    },
+    "payload": {
+      "ref": "master",
+      "ref_type": "branch",
+      "master_branch": "master",
+      "description": "",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2015-01-22T07:08:48Z"
+  },
+  {
+    "id": "2528710789",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29665859,
+      "name": "sitzadad/PhotoAlbum",
+      "url": "https://api.github.com/repos/sitzadad/PhotoAlbum"
+    },
+    "payload": {
+      "ref": null,
+      "ref_type": "repository",
+      "master_branch": "master",
+      "description": "",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2015-01-22T07:06:48Z"
+  },
+  {
+    "id": "2524989326",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29544863,
+      "name": "sitzadad/JS1",
+      "url": "https://api.github.com/repos/sitzadad/JS1"
+    },
+    "payload": {
+      "push_id": 551481030,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "0a7dc384efe35f4bfb4ecdffdf274e271790fef5",
+      "before": "59f973efa32b2f9498075a8e005ee12bdb56c90d",
+      "commits": [
+        {
+          "sha": "0a7dc384efe35f4bfb4ecdffdf274e271790fef5",
+          "author": {
+            "email": "sitzadad@Adams-MBP.attlocal.net",
+            "name": "Adam Sitz"
+          },
+          "message": "added 6th time for Matt; code unchanged",
+          "distinct": true,
+          "url": "https://api.github.com/repos/sitzadad/JS1/commits/0a7dc384efe35f4bfb4ecdffdf274e271790fef5"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-20T21:27:05Z"
+  },
+  {
+    "id": "2524625065",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29544863,
+      "name": "sitzadad/JS1",
+      "url": "https://api.github.com/repos/sitzadad/JS1"
+    },
+    "payload": {
+      "push_id": 551339908,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "59f973efa32b2f9498075a8e005ee12bdb56c90d",
+      "before": "e19cdbe823e36bba8d37651740dee338dd109525",
+      "commits": [
+        {
+          "sha": "59f973efa32b2f9498075a8e005ee12bdb56c90d",
+          "author": {
+            "email": "sitzadad@Adams-MacBook-Pro.local",
+            "name": "Adam Sitz"
+          },
+          "message": "hard mode complete",
+          "distinct": true,
+          "url": "https://api.github.com/repos/sitzadad/JS1/commits/59f973efa32b2f9498075a8e005ee12bdb56c90d"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-20T19:01:29Z"
+  },
+  {
+    "id": "2524556977",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29544863,
+      "name": "sitzadad/JS1",
+      "url": "https://api.github.com/repos/sitzadad/JS1"
+    },
+    "payload": {
+      "ref": "master",
+      "ref_type": "branch",
+      "master_branch": "master",
+      "description": "",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2015-01-20T18:33:46Z"
+  },
+  {
+    "id": "2524546679",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29544863,
+      "name": "sitzadad/JS1",
+      "url": "https://api.github.com/repos/sitzadad/JS1"
+    },
+    "payload": {
+      "ref": null,
+      "ref_type": "repository",
+      "master_branch": "master",
+      "description": "",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2015-01-20T18:29:25Z"
+  },
+  {
+    "id": "2523848124",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29516912,
+      "name": "sitzadad/Peralta",
+      "url": "https://api.github.com/repos/sitzadad/Peralta"
+    },
+    "payload": {
+      "push_id": 551027524,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "d19fb2673a6ec403e5f2baa33333a0bc4f7f96e3",
+      "before": "df1f0e9be3501e77e61fb64e8a60b875af02dd90",
+      "commits": [
+        {
+          "sha": "d19fb2673a6ec403e5f2baa33333a0bc4f7f96e3",
+          "author": {
+            "email": "sitzadad@Adams-MacBook-Pro.local",
+            "name": "Adam Sitz"
+          },
+          "message": "responsive to 685px",
+          "distinct": true,
+          "url": "https://api.github.com/repos/sitzadad/Peralta/commits/d19fb2673a6ec403e5f2baa33333a0bc4f7f96e3"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-20T14:06:07Z"
+  },
+  {
+    "id": "2523122103",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29516912,
+      "name": "sitzadad/Peralta",
+      "url": "https://api.github.com/repos/sitzadad/Peralta"
+    },
+    "payload": {
+      "ref": "master",
+      "ref_type": "branch",
+      "master_branch": "master",
+      "description": "",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2015-01-20T07:14:31Z"
+  },
+  {
+    "id": "2523119665",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29516912,
+      "name": "sitzadad/Peralta",
+      "url": "https://api.github.com/repos/sitzadad/Peralta"
+    },
+    "payload": {
+      "ref": null,
+      "ref_type": "repository",
+      "master_branch": "master",
+      "description": "",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2015-01-20T07:12:31Z"
+  },
+  {
+    "id": "2523117770",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29516661,
+      "name": "sitzadad/ChooseYourOwnAdventure",
+      "url": "https://api.github.com/repos/sitzadad/ChooseYourOwnAdventure"
+    },
+    "payload": {
+      "ref": "master",
+      "ref_type": "branch",
+      "master_branch": "master",
+      "description": "",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2015-01-20T07:10:53Z"
+  },
+  {
+    "id": "2523111483",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29516661,
+      "name": "sitzadad/ChooseYourOwnAdventure",
+      "url": "https://api.github.com/repos/sitzadad/ChooseYourOwnAdventure"
+    },
+    "payload": {
+      "ref": null,
+      "ref_type": "repository",
+      "master_branch": "master",
+      "description": "",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2015-01-20T07:05:28Z"
+  },
+  {
+    "id": "2513844046",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 28875124,
+      "name": "sitzadad/FirstWebsiteProject",
+      "url": "https://api.github.com/repos/sitzadad/FirstWebsiteProject"
+    },
+    "payload": {
+      "push_id": 546852407,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "8a96abe05cc701f83d3d69d49f0f13d389bf4953",
+      "before": "0f97901b317e14ad6ca1f5288793e4369dc6cd37",
+      "commits": [
+        {
+          "sha": "8a96abe05cc701f83d3d69d49f0f13d389bf4953",
+          "author": {
+            "email": "sitzadad@Adams-MBP.attlocal.net",
+            "name": "Adam Sitz"
+          },
+          "message": "added some sass and a couple transitions",
+          "distinct": true,
+          "url": "https://api.github.com/repos/sitzadad/FirstWebsiteProject/commits/8a96abe05cc701f83d3d69d49f0f13d389bf4953"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-15T03:58:20Z"
+  },
+  {
+    "id": "2513583559",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29182655,
+      "name": "sitzadad/ResponsiveSurfPaddleProject",
+      "url": "https://api.github.com/repos/sitzadad/ResponsiveSurfPaddleProject"
+    },
+    "payload": {
+      "push_id": 546746937,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "8121bb0042097a8bdbea4c04ee845039fcc93fdf",
+      "before": "b7e1c2b92353a9b814b73126f9c4bc53874ac13e",
+      "commits": [
+        {
+          "sha": "8121bb0042097a8bdbea4c04ee845039fcc93fdf",
+          "author": {
+            "email": "sitzadad@Adams-MBP.attlocal.net",
+            "name": "Adam Sitz"
+          },
+          "message": "SASSified",
+          "distinct": true,
+          "url": "https://api.github.com/repos/sitzadad/ResponsiveSurfPaddleProject/commits/8121bb0042097a8bdbea4c04ee845039fcc93fdf"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-15T00:35:56Z"
+  },
+  {
+    "id": "2511286914",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 28875124,
+      "name": "sitzadad/FirstWebsiteProject",
+      "url": "https://api.github.com/repos/sitzadad/FirstWebsiteProject"
+    },
+    "payload": {
+      "push_id": 545805515,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "0f97901b317e14ad6ca1f5288793e4369dc6cd37",
+      "before": "165a134487b45571e3f4e2762c145a37f46d5297",
+      "commits": [
+        {
+          "sha": "0f97901b317e14ad6ca1f5288793e4369dc6cd37",
+          "author": {
+            "email": "sitzadad@Adams-MBP.attlocal.net",
+            "name": "Adam Sitz"
+          },
+          "message": "incorporated sass",
+          "distinct": true,
+          "url": "https://api.github.com/repos/sitzadad/FirstWebsiteProject/commits/0f97901b317e14ad6ca1f5288793e4369dc6cd37"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-14T05:25:18Z"
+  },
+  {
+    "id": "2511228017",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29182655,
+      "name": "sitzadad/ResponsiveSurfPaddleProject",
+      "url": "https://api.github.com/repos/sitzadad/ResponsiveSurfPaddleProject"
+    },
+    "payload": {
+      "push_id": 545780639,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "b7e1c2b92353a9b814b73126f9c4bc53874ac13e",
+      "before": "0a8675832b49a0e3339368bb9a6112af9097e1d2",
+      "commits": [
+        {
+          "sha": "b7e1c2b92353a9b814b73126f9c4bc53874ac13e",
+          "author": {
+            "email": "sitzadad@Adams-MBP.attlocal.net",
+            "name": "Adam Sitz"
+          },
+          "message": "incorporated sass variables",
+          "distinct": true,
+          "url": "https://api.github.com/repos/sitzadad/ResponsiveSurfPaddleProject/commits/b7e1c2b92353a9b814b73126f9c4bc53874ac13e"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-14T04:21:45Z"
+  },
+  {
+    "id": "2511047189",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 28875124,
+      "name": "sitzadad/FirstWebsiteProject",
+      "url": "https://api.github.com/repos/sitzadad/FirstWebsiteProject"
+    },
+    "payload": {
+      "push_id": 545708000,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "165a134487b45571e3f4e2762c145a37f46d5297",
+      "before": "0a7775adf07e29295404360b6ed379e34f2c4c7a",
+      "commits": [
+        {
+          "sha": "165a134487b45571e3f4e2762c145a37f46d5297",
+          "author": {
+            "email": "sitzadad@Adams-MBP.attlocal.net",
+            "name": "Adam Sitz"
+          },
+          "message": "added responsive design features",
+          "distinct": true,
+          "url": "https://api.github.com/repos/sitzadad/FirstWebsiteProject/commits/165a134487b45571e3f4e2762c145a37f46d5297"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-14T01:45:08Z"
+  },
+  {
+    "id": "2510591860",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29182655,
+      "name": "sitzadad/ResponsiveSurfPaddleProject",
+      "url": "https://api.github.com/repos/sitzadad/ResponsiveSurfPaddleProject"
+    },
+    "payload": {
+      "push_id": 545528868,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "0a8675832b49a0e3339368bb9a6112af9097e1d2",
+      "before": "84adaa80ce9df0a67d5ddcd1f1f3fa6379135a38",
+      "commits": [
+        {
+          "sha": "0a8675832b49a0e3339368bb9a6112af9097e1d2",
+          "author": {
+            "email": "sitzadad@Adams-MBP.attlocal.net",
+            "name": "Adam Sitz"
+          },
+          "message": "responsive design is stable",
+          "distinct": true,
+          "url": "https://api.github.com/repos/sitzadad/ResponsiveSurfPaddleProject/commits/0a8675832b49a0e3339368bb9a6112af9097e1d2"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-13T21:43:00Z"
+  },
+  {
+    "id": "2509536134",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29182655,
+      "name": "sitzadad/ResponsiveSurfPaddleProject",
+      "url": "https://api.github.com/repos/sitzadad/ResponsiveSurfPaddleProject"
+    },
+    "payload": {
+      "push_id": 545102079,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "84adaa80ce9df0a67d5ddcd1f1f3fa6379135a38",
+      "before": "b6c6adde007269668663a8d97a3519b82e3db86b",
+      "commits": [
+        {
+          "sha": "84adaa80ce9df0a67d5ddcd1f1f3fa6379135a38",
+          "author": {
+            "email": "sitzadad@Adams-MacBook-Pro.local",
+            "name": "Adam Sitz"
+          },
+          "message": "code is mobile first, but still need tweeks to make full size version match template",
+          "distinct": true,
+          "url": "https://api.github.com/repos/sitzadad/ResponsiveSurfPaddleProject/commits/84adaa80ce9df0a67d5ddcd1f1f3fa6379135a38"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-13T14:40:33Z"
+  },
+  {
+    "id": "2508936632",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29182655,
+      "name": "sitzadad/ResponsiveSurfPaddleProject",
+      "url": "https://api.github.com/repos/sitzadad/ResponsiveSurfPaddleProject"
+    },
+    "payload": {
+      "ref": "master",
+      "ref_type": "branch",
+      "master_branch": "master",
+      "description": "",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2015-01-13T09:32:14Z"
+  },
+  {
+    "id": "2508929437",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 10282070,
+      "login": "sitzadad",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sitzadad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10282070?"
+    },
+    "repo": {
+      "id": 29182655,
+      "name": "sitzadad/ResponsiveSurfPaddleProject",
+      "url": "https://api.github.com/repos/sitzadad/ResponsiveSurfPaddleProject"
+    },
+    "payload": {
+      "ref": null,
+      "ref_type": "repository",
+      "master_branch": "master",
+      "description": "",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2015-01-13T09:28:23Z"
+  }
+]
