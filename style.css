@@ -1,6 +1,10 @@
+.invis {
+  display: hidden; }
+
 body {
   margin: 0;
-  padding-top: 2em; }
+  padding-top: 2em;
+  font-family: Helvetica; }
 
 #mainWrapper {
   width: 70%;
@@ -12,20 +16,113 @@ aside {
   box-sizing: border-box;
   padding-right: 1em;
   min-height: 500px; }
-  aside img {
-    width: 100%; }
+  aside img:nth-child(1) {
+    width: 100%;
+    border-radius: 5px; }
   aside span {
     display: block; }
-  aside #statsWrapper div {
-    float: left;
-    text-align: center;
-    width: 33.33%; }
+  aside p {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 1em; }
+  aside p:nth-child(5) {
+    border: none; }
+
+#name {
+  font-weight: bold;
+  font-size: 1.8em;
+  padding-top: 0.1em; }
+
+#login {
+  font-size: 1.4em;
+  color: grey; }
+
+#statsWrapper {
+  display: flex; }
+
+.statsChunk {
+  text-align: center;
+  width: 33%;
+  justify-content: space-between; }
+  .statsChunk span:nth-child(1) {
+    color: #4183c4;
+    font-size: 1.6em; }
+  .statsChunk span:nth-child(2) {
+    color: grey;
+    font-size: 0.8em; }
+
+.statsChunk:hover {
+  cursor: pointer; }
+
+#leftLocationWrap {
+  margin-bottom: 0.5em; }
+
+.octicon-location, .octicon-clock {
+  font-size: 0.5em;
+  color: grey;
+  display: inline-block; }
+
+.locationDateLeft {
+  display: inline-block;
+  font-size: 0.9em; }
+
+#orgP span {
+  font-weight: bold; }
+#orgP img {
+  width: 20%;
+  margin-top: 1em; }
 
 section {
   float: left;
   width: 75%;
   min-height: 500px; }
+  section ul {
+    padding: 0;
+    margin: 0; }
+  section img {
+    width: 30px; }
   section li {
+    display: block;
     width: 100%;
     color: #4183c4;
-    list-style-type: none; }
+    list-style-type: none;
+    padding: 2em 0;
+    margin: 0;
+    border-bottom: 1px solid lightgrey; }
+    section li h3 {
+      margin: 0;
+      display: inline-block; }
+    section li span {
+      display: inline-block; }
+
+#toggleButtons {
+  padding: 0; }
+  #toggleButtons button {
+    font-size: 0.9em;
+    padding: 0.5em;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: transparent;
+    border: none;
+    color: grey;
+    border: 1px solid transparent; }
+  #toggleButtons button:hover {
+    cursor: pointer;
+    border-top: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey; }
+
+.repoTextRight {
+  color: #909090;
+  float: right;
+  font-weight: bold;
+  font-size: 0.8em; }
+
+.repoLang {
+  position: relative;
+  top: 3px; }
+
+.repoTime {
+  display: block;
+  color: #909090;
+  padding-top: 1em;
+  font-size: 0.9em; }

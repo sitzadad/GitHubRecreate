@@ -1,44 +1,54 @@
 var methods={
   init:function(){
     methods.initStyling();
+    methods.initEvents();
   },
   initStyling:function(){
-    methods.formatLeft();
-    methods.renderAllRepos(repos);
+      methods.renderLeftColumn(users);
+      methods.iterateeToFunction(repos,methods.renderRepo);
+      //repos=_.sortBy(repos,'updated_at');
   },
-  formatLeft:function(){
-    //performing surgery on the incoming date to make it presentable
-    var startDateArray=user.created_at.split('-');
-    var y=startDateArray[0];
-    var m=startDateArray[1];
-    var d=startDateArray[2].split('').splice(0,2).join('');
+  initEvents:function(){
+    $('.octicon-repo').on('click',methods.toggleRepos);
+    $('.octicon-rss').on('click',methods.toggleActivity);
+  },
+  toggleRepos:function(event){
+    event.preventDefault();
+    $('section ul:nth-child(2)').empty();
+    methods.iterateeToFunction(repos,methods.renderRepo);
+  },
+  toggleActivity:function(event){
+    event.preventDefault();
+    $('section ul:nth-child(2)').empty();
+    methods.iterateeToFunction(activity,methods.renderActivity);
+  },
+  renderLeftColumn:function(passed){
     //assemble left column
-    var leftContents=[
-      '<img src='+user.avatar_url+'/>',
-      '<p><span>'+user.name+'</span>',
-      '<span>'+user.login+'</span></p>',
-      '<p><span class="octicon octicon-location"> '+user.location+'</span>',
-      '<span class="octicon octicon-clock">Joined on '+m+'/'+d+'/'+y+'</span></p>',
-      '<div id="statsWrapper"><div><span>'+user.followers+'</span><span>Followers</span></div>',
-      '<div><span>0</span><span>Starred</span></div>',
-      '<div><span>'+user.following+'</span><span>Following</span></div></div>',
-      '<p>Organizations</p>'
-    ].join('')
-    $("aside").append(leftContents);
+    var compiled=_.template(templates.leftColumn);
+    $("aside").append(compiled(passed));
   },
-  formatRight:function(){
-
+  renderActivity:function(passedObject){
+    if(passedObject.type==='PushEvent'){
+      var compiledPush=_.template(templates.activityPush);
+      $("section ul:nth-child(2)").append(compiledPush(passedObject));
+    }else if(passedObject.payload.ref_type==='branch'){
+      var compiledBranch=_.template(templates.activityBranch);
+      $("section ul:nth-child(2)").append(compiledBranch(passedObject));
+    }else if(passedObject.payload.ref_type==='repository'){
+      var compiledRepository=_.template(templates.activityRepository);
+      $("section ul:nth-child(2)").append(compiledRepository(passedObject));
+    }
   },
-  renderRepo:function(myObject){
+  renderRepo:function(passedObject){
+    //load template into var
     var compiled=_.template(templates.repos);
-    //add completed template to DOM
-    $("section ul").prepend(compiled(myObject));
+    //inut into template var and then prepend to DOM
+    $("section ul:nth-child(2)").append(compiled(passedObject));
   },
-  renderAllRepos:function(myArray){
-    _.each(myArray,methods.renderRepo);
+  iterateeToFunction:function(passedArray,renderFunction){
+    _.each(passedArray,renderFunction);
   }
 };
-
 $(document).ready(function(){
   methods.init();
 });
