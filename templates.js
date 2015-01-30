@@ -1,56 +1,62 @@
-//surgery on the incoming date to make it presentable
-var getDate = function(date){
-  var startDateArray = date.split('-');
-  var y=startDateArray[0];
-  var m=startDateArray[1];
-  var d=startDateArray[2].split('').splice(0,2).join('');
+var templateTools={
+  //surgery on the incoming date to make it presentable
+  getDate:function(date){
+    var startDateArray = date.split('-');
+    var y=startDateArray[0];
+    var m=startDateArray[1];
+    var d=startDateArray[2].split('').splice(0,2).join('');
 
-  if(m==1||m==01){
-    m='Jan';
-  }else if(m==2||m==02){
-    m='Feb';
-  }else if(m==3||m==03){
-    m='Mar';
-  }else if(m==4||m==04){
-    m='Apr';
-  }else if(m==5||m==05){
-    m='May';
-  }else if(m==6||m==06){
-    m='Jun';
-  }else if(m==7||m==07){
-    m='Jul';
-  }else if(m==8||m==08){
-    m='Aug';
-  }else if(m==9||m==09){
-    m='Sep';
-  }else if(m==10){
-    m='Oct';
-  }else if(m==11){
-    m='Nov';
-  }else if(m==12){
-    m='Dec';
+    if(m==1||m==01){
+      m='Jan';
+    }else if(m==2||m==02){
+      m='Feb';
+    }else if(m==3||m==03){
+      m='Mar';
+    }else if(m==4||m==04){
+      m='Apr';
+    }else if(m==5||m==05){
+      m='May';
+    }else if(m==6||m==06){
+      m='Jun';
+    }else if(m==7||m==07){
+      m='Jul';
+    }else if(m==8||m==08){
+      m='Aug';
+    }else if(m==9||m==09){
+      m='Sep';
+    }else if(m==10){
+      m='Oct';
+    }else if(m==11){
+      m='Nov';
+    }else if(m==12){
+      m='Dec';
+    }
+    return m+" "+d+", "+y;
+  },
+  //returns a string containing the elapsed time since the repo was updated
+  timeSinceUpdate:function(updateTime){
+    var nowDT = new Date();
+    var nowHours = nowDT.getHours();
+    var nowMinutes = nowDT.getMinutes();
+    var nowSeconds = nowDT.getSeconds();
+    var updateTime = updateTime.split('');
+    var thenHours = updateTime.splice(11,2);
+    var thenMinutes = updateTime.splice(14,2);
+    var thenSeconds = updateTime.splice(18,2);
+
+    //2015-01-15T03:58:20Z
+    return thenHours+" hours, "+thenMinutes+" minutes";
+  },
+  formatPayloadRef:function(passed){
+    var foo=passed.split('/');
+    return(foo.splice(2));
+
+  },
+  findFirstSeven:function(passed){
+    //var foo = passed;
+    return(passed.split('').splice(0,7).join(''));
   }
-  return m+" "+d+", "+y;
 };
-//returns a string containing the elapsed time since the repo was updated
-var timeSinceUpdate = function(updateTime){
-  var nowDT = new Date();
-  var nowHours = nowDT.getHours();
-  var nowMinutes = nowDT.getMinutes();
-  var nowSeconds = nowDT.getSeconds();
-  var updateTime = updateTime.split('');
-  var thenHours = updateTime.splice(11,2);
-  var thenMinutes = updateTime.splice(14,2);
-  var thenSeconds = updateTime.splice(18,2);
-
-
-
-
-
-  //2015-01-15T03:58:20Z
-  return thenHours+" hours, "+thenMinutes+" minutes";
-}
-
 var templates={};
   templates.repos=[
     '<li>',
@@ -69,7 +75,7 @@ var templates={};
   '</p>',
   '<p>',
   '<span id="leftLocationWrap"><span class="octicon octicon-location"></span><span class="locationDateLeft">&nbsp;&nbsp;<%= location %></span></span>',
-  '<span><span class="octicon octicon-clock"></span><span class="locationDateLeft">&nbsp;Joined on <%= getDate(created_at) %></span></span>',
+  '<span><span class="octicon octicon-clock"></span><span class="locationDateLeft">&nbsp;Joined on <%= templateTools.getDate(created_at) %></span></span>',
   '</p>',
   '<p id="statsWrapper">',
   '<span class="statsChunk"><span><%= followers %></span><span>Followers</span></span>',
@@ -82,19 +88,38 @@ var templates={};
   '</p>'
   ].join('');
   templates.activityPush=[
-    '<li>',
-    '<span><%= created_at %></span>',
-    '<span><%= actor.login %> pushed to <%= payload.ref %> at <%= repo.name %></span>',
-    '<span><img src=<%= actor.avatar_url %></img><%= payload.commits[0].sha %><%= payload.commits[0].message %></span>',
+    '<li class="pushActivity">',
+      '<span><%= created_at %></span>',
+      '<div class="activityLineTwo">',
+        '<span><%= actor.login %> </span>',
+        '<span>&nbsp;pushed to&nbsp;</span>',
+        '<span><%= templateTools.formatPayloadRef(payload.ref) %></span>',
+        '<span>&nbsp;at&nbsp;</span>',
+        '<span><%= repo.name %></span>',
+      '</div>',
+      '<div class="activityLineThree">',
+        '<img src=<%= actor.avatar_url %></img>',
+        '<span>&nbsp;<%= templateTools.findFirstSeven(payload.commits[0].sha) %><span>&nbsp;<%= payload.commits[0].message %></span></span>',
+      '</div>',
     '</li>'
   ].join('');
   templates.activityBranch=[
-  '<li>',
-  '<span><%= actor.login %> created branch <%= payload.ref %> at <%= repo.name %> <%= created_at %></span>',
+  '<li class="branchActivity">',
+    '<span><%= actor.login %>',
+      '<span>&nbsp;created branch',
+        '<span class="octicon octicon-git-branch ">&nbsp;<%= payload.ref %></span>',
+      '&nbsp;at&nbsp;',
+      '</span>',
+      '<%= repo.name %> <span> <%= created_at %></span>',
+    '</span>',
   '</li>'
   ].join('');
   templates.activityRepository=[
-  '<li>',
-  '<span><%= actor.login %> created repository <%= repo.name %> <%= created_at %></span>',
+  '<li class="RepoActivity">',
+    '<span><%= actor.login %>',
+      '<span>&nbsp;created repository&nbsp;</span>',
+      '<%= repo.name %>',
+      '<span>&nbsp;<%= created_at %></span>',
+    '</span>',
   '</li>'
   ].join('');

@@ -110,6 +110,16 @@ section {
     border-top: 1px solid lightgrey;
     border-left: 1px solid lightgrey;
     border-right: 1px solid lightgrey; }
+  #toggleButtons button:focus {
+    outline: 0; }
+  #toggleButtons .octicon-pencil {
+    float: right;
+    background-color: #eee;
+    border: 1px solid lightgrey;
+    position: relative;
+    bottom: 0.25em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em; }
 
 .repoTextRight {
   color: #909090;
@@ -126,3 +136,76 @@ section {
   color: #909090;
   padding-top: 1em;
   font-size: 0.9em; }
+
+.pushActivity > span:nth-child(1) {
+  color: #909090;
+  font-size: 0.8em; }
+
+.activityLineTwo {
+  font-size: 0.9em;
+  margin-top: 0.2em;
+  font-weight: bold; }
+  .activityLineTwo span:nth-child(2) {
+    color: black; }
+  .activityLineTwo span:nth-child(4) {
+    color: black; }
+
+.activityLineThree {
+  font-size: 0.9em;
+  margin-top: 0.2em; }
+  .activityLineThree span:nth-child(2) {
+    position: relative;
+    bottom: 1em; }
+    .activityLineThree span:nth-child(2) span {
+      color: #909090; }
+
+.branchActivity, .repoActivity {
+  font-size: 0.9em; }
+
+.branchActivity > span > span:nth-child(1) {
+  color: black; }
+
+.branchActivity > span > span > span:nth-child(1) {
+  background-color: #e8f1f6;
+  padding: 0.2em;
+  border-radius: 2px;
+  color: grey;
+  margin-left: 0.2em; }
+
+.branchActivity > span > span:nth-child(2) {
+  color: #909090; }
+
+.repoActivity span > span:nth-child(1), .repoActivity span > span:nth-child(2) {
+  color: grey; }
+
+/*   li>span:nth-child(1){
+  display:block;
+  color:#909090;
+  font-size:0.9em;
+}
+li>span:nth-child(3){
+  font-weight:bold;
+}
+li>span:nth-child(4){
+  color:black;
+  font-weight:bold;
+}
+li>span:nth-child(5){
+  font-weight:bold;
+}
+li>span:nth-child(6){
+  color:black;
+  font-weight:bold;
+}
+li>span:nth-child(7){
+  font-weight:bold;
+  color:red;
+}
+img{
+  display:inline-block;
+}
+div{
+  vertical-align:top;
+  margin-top:0.2em;
+  font-size:0.9em;
+} */

@@ -4,9 +4,11 @@ var methods={
     methods.initEvents();
   },
   initStyling:function(){
+      repos=_.sortBy(repos,'updated_at').reverse();
+      //repos=_.sortBy(activity,'updated_at').reverse();
       methods.renderLeftColumn(users);
       methods.iterateeToFunction(repos,methods.renderRepo);
-      //repos=_.sortBy(repos,'updated_at');
+
   },
   initEvents:function(){
     $('.octicon-repo').on('click',methods.toggleRepos);
